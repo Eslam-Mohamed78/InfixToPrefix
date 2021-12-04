@@ -38,9 +38,7 @@ Only in the case of “^” operator, we pop operators from the stack which are 
 
 ### Second: Prefix Evaluator
 
-ويقوم باخراج ناتج هذه العملية الحسابية prefix هذا البرنامج يقوم ياخذ متغير واحد تعبير في صيغة
-
-و الجوريزم هذا البرنامج هو كالاتي
+ويقوم باخراج ناتج هذه العملية الحسابية و الجوريزم هذا البرنامج هو كالاتي  prefix هذا البرنامج ياخذ متغير واحد في صيغة
 
 Step 1: Reverse the prefix expression.
 
