@@ -13,11 +13,9 @@ You will have the prefix exp and the result of it.
 
 ### First: InfixToPrefix Program
 
-prefix ويقوم بتحويلها لصيغة infix هذا البرنامج ياخذ متغير واحد فقط وهو التعبير الرياضي في صيغة
+وتعتمد طريقة عمل هذا prefix ويقوم بتحويلها لصيغة infix هذا البرنامج ياخذ متغير واحد فقط وهو التعبير الرياضي في صيغة
 
-ولكن مع وجود بعض الاختلافات infixToPostfix وتعتمد طريقة عمل هذا البرنامج علي الجوريزم تحويل 
-
-وهذه الاختلافات هي كالاتي
+ولكن مع وجود بعض الاختلافات وهي كالاتي infixToPostfix البرنامج علي الجوريزم تحويل 
 
 Step 1: Reverse the infix expression i.e A+B*C will become C*B+A. Note while reversing each ‘(‘ will become ‘)’ and each ‘)’ becomes ‘(‘.
 
