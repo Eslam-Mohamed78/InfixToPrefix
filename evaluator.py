@@ -7,12 +7,12 @@ def prefixEval(prefixExpr):
 
     for token in tokenList:
         if token not in "^*/-+":
-            operandStack.push(int(token))
+            operandStack.push(float(token))
         else:
             operand1 = operandStack.pop()
             operand2 = operandStack.pop()
             result = doMath(token, operand1, operand2)
-            operandStack.push(result)
+            operandStack.push(float(result))
     return operandStack.pop()
 
 def doMath(op, op1, op2):
