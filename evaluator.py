@@ -6,7 +6,7 @@ def prefixEval(prefixExpr):
     tokenList.reverse()
 
     for token in tokenList:
-        if token in "0123456789":
+        if token not in "^*/-+":
             operandStack.push(int(token))
         else:
             operand1 = operandStack.pop()

@@ -24,7 +24,7 @@ def infixToprefix(infixexpr):
     tokenList = reversingList(infixexpr)
 
     for token in tokenList:
-        if token in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" or token in "0123456789":
+        if token not in "()^*/-+":
             prefixList.append(token)
         elif token == '(':
             opStack.push(token)
@@ -62,3 +62,5 @@ def infixToprefix(infixexpr):
 # print(infixToprefix("A * B + C / D"))
 # print(infixToprefix("8 + 3 * 5 / ( 9 - 4 )"))
 # print(infixToprefix("8 + 3 ^ 2 / ( 9 - 6 )"))
+# print(infixToprefix("* + 6 9 - 3 1"))
+# print(infixToprefix("3 ^ 2 ^ 4 - 0 - 15 + 7 * 3 * 2"))
