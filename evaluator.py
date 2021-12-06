@@ -4,9 +4,10 @@ def prefixEval(prefixExpr):
     operandStack = Stack()
     tokenList = prefixExpr.split()
     tokenList.reverse()
+    operatorList = ['+', '-', '*', '/', '^', '**']
 
     for token in tokenList:
-        if token not in "^*/-+":
+        if token not in operatorList:
             operandStack.push(float(token))
         else:
             operand1 = operandStack.pop()
