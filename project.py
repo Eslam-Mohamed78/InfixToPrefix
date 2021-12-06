@@ -64,5 +64,5 @@ def infixToprefix(infixexpr):
 # print(infixToprefix("8 + 3 * 5 / ( 9 - 4 )"))
 # print(infixToprefix("8 + 3 ^ 2 / ( 9 - 6 )"))
 # print(infixToprefix("* + 6 9 - 3 1"))
-# print(infixToprefix("3 ^ 2 ^ 4 - 0 - 15 + 7 * 3 * 2"))
+# print(infixToprefix("3 ^ 2 ^ 4 - 0 - 15.2 + 7 * 3 * 2"))
 # print(infixToprefix("( 1 + 2 ) * 3 - ( ( 4 - 5 ) ** ( 6 + 7 ) )"))

@@ -1,4 +1,5 @@
 from project import *
+from checkingValidation import *
 
 def prefixEval(prefixExpr):
     operandStack = Stack()
@@ -29,13 +30,16 @@ def doMath(op, op1, op2):
         return op1 - op2
 
 
-theInfixExpr = input('Please enter the infix expression without quotes: ')
+theInfixExpr = input("Please Enter the infix Expression with spaces and without quotes to check its validation:\n")
 
-thePrefixExpr = infixToprefix(theInfixExpr)
+print(checkingValidation(theInfixExpr))
 
-print('The Prefix Expression is', thePrefixExpr)
+if checkingValidation(theInfixExpr) == 'Valid Expression':
+    thePrefixExpr = infixToprefix(theInfixExpr)
+    print('The Prefix Expression is', thePrefixExpr)
+    print('The result after Evaluating the prefix Expression is', prefixEval(thePrefixExpr))
 
-print('The result after Evaluating the prefix Expression is', prefixEval(thePrefixExpr))
+
 
 # Infix expressions for testing
 # 5 * 3 ** ( 4 - 2 )
