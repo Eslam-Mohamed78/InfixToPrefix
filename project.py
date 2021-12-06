@@ -22,9 +22,10 @@ def infixToprefix(infixexpr):
     opStack = Stack()
     prefixList = []
     tokenList = reversingList(infixexpr)
+    operatorList = ['+', '-', '*', '/', '^', '**', '(', ')']
 
     for token in tokenList:
-        if token not in "()^*/-+":
+        if token not in operatorList:
             prefixList.append(token)
         elif token == '(':
             opStack.push(token)
@@ -64,3 +65,4 @@ def infixToprefix(infixexpr):
 # print(infixToprefix("8 + 3 ^ 2 / ( 9 - 6 )"))
 # print(infixToprefix("* + 6 9 - 3 1"))
 # print(infixToprefix("3 ^ 2 ^ 4 - 0 - 15 + 7 * 3 * 2"))
+# print(infixToprefix("( 1 + 2 ) * 3 - ( ( 4 - 5 ) ** ( 6 + 7 ) )"))
